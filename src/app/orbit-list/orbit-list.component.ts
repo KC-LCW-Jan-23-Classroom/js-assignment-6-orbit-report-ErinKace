@@ -27,4 +27,14 @@ export class OrbitListComponent implements OnInit {
 		});
 	}
 
+	alternateRow(rowObject): boolean {
+		if (this.satellites.indexOf(rowObject)%2 === 0) {
+			return true;
+		}
+		// console.log(this.satellites.indexOf(rowObject));
+		return false;
+	}
+
+
+
 }
